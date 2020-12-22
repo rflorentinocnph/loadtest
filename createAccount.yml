@@ -1,5 +1,5 @@
 config:
-  target: "http://localhost:5000"
+  target: "https://ccv078g234jk.mlhuillier1.com/api"
   processor: "./functions.js"
   phases:
       - duration: 1
@@ -9,7 +9,7 @@ scenarios:
     flow:
       - function: createEmail
       - post: 
-          url: "/create"
+          url: "/wallet/registration"
           json:
             uname: "{{uname}}"
             password: "{{password}}"
