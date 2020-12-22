@@ -5,7 +5,7 @@ const cors = require('cors')
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use(bodyParser.json({ limit: '50mb' }));
-app.post("/create", (req, res) => {
+app.post("/api/wallet/registration", (req, res) => {
     const date = new Date();
     console.log(date.toGMTString(),":",date.getMilliseconds());
     res.send("ok")
