@@ -1,6 +1,6 @@
 config:
-  target: "https://ccv078g234jk.mlhuillier1.com/api"
-  # target: "http://localhost:5000/api"
+  # target: "https://ccv078g234jk.mlhuillier1.com/api"
+  target: "http://localhost:5000/api"
   processor: "./functions.js"
   phases:
       - duration: 1
